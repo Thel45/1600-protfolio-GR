@@ -1,8 +1,12 @@
-body {
-    background-color: #53a7df8e;
+*/*body*/ { 
     margin: 0;
+    padding: 0;
 }
 
 nav {
     background-color: red;
+}
+
+.project-tile img{
+    width: 200px;
 }
