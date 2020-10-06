@@ -113,6 +113,12 @@ a {
 
 h1 {
     font-size: 3rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #ddd;
 }
 
 @media screen and (max-width: 28.75em) {
