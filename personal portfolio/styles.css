@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+  }
+  header img {
+    height: 90px;
+  }
+  .profile-pic {
+    height: 260px;
+  }
+  section img {
+    height: 120px;
+  }
+  body {
+    background-color: purple;
+  }
+  #me {
+    display: flex;
+    border: 3px solid blue;
+  }
+  #name-date {
+  }
+  #project-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid yellow;
+  }
+  #my-list {
+    background-color: green;
+    border: 3px solid white;
+  }
+  #logos {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+  }
+  figcaption {
+    display: flex;
+    position: relative;
+    top: -20px;
+    justify-content: center;
+    background-color: green;
+  }
+  #learning {
+    border: 3px solid yellow;
+  }
+  #paragraph {
+    border: 3px soild orange;
+    background-color: green;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
