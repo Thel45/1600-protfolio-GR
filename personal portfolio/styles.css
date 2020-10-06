@@ -19,8 +19,8 @@ header {
     display: flex;
     border: 3px solid blue;
   }
-  #name-date {
-  }
+ /* #name-date {
+  } */
   #project-date {
     display: flex;
     justify-content: space-between;
