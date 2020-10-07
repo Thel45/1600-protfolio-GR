@@ -50,7 +50,7 @@ a {
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(180deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(180deg, #000000 0%, #fc0b0b 100%);
 }
 
 .projects-section {
@@ -80,6 +80,7 @@ a {
     height: 80vh;
     padding: 0 2rem;
     background: #303841;
+    background-image: linear-gradient(90deg, #af1818 0%, #e4a41c 75%);
   }
 
   .contact-links {
@@ -127,6 +128,9 @@ h3 {
         align-items: center;
     }
     #welcome-section {
-        background-image: linear-gradient(270deg, #3a3d40 0%, #181719 100%);
+        background-image: linear-gradient(270deg, #1c7ee0 0%, #73499c 100%);
+    }
+    .contact-section {
+        background-image: linear-gradient(270deg, #0e0f0f 0%, #ff13cc 100%);
     }
 }
