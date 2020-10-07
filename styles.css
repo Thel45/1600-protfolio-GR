@@ -78,7 +78,7 @@ a {
     text-align: center;
     width: 100%;
     height: 80vh;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     background: #303841;
     background-image: linear-gradient(90deg, #af1818 0%, #e4a41c 75%);
   }
@@ -119,7 +119,7 @@ h1 {
 
 h3 {
     font-size: 2rem;
-    color: #ddd;
+    color: rgb(7, 192, 248);
 }
 
 @media screen and (max-width: 28.75em) {
@@ -133,4 +133,5 @@ h3 {
     .contact-section {
         background-image: linear-gradient(270deg, #0e0f0f 0%, #ff13cc 100%);
     }
+    
 }
