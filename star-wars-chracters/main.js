@@ -19,28 +19,47 @@ otherButton.textContent = 'Other Characters'
 mainHeader.appendChild(otherButton)
 
 const maleCharacters = people.filter(person => person.gender === 'male')
-console.log(maleCharacters)
+
+const femaleCharacters = people.filter(person => person.gender === 'female')
 
 maleButton.addEventListener('click', (event) => {
-    maleCharacters.forEach(element => {
+   populateDOM(maleCharacters)
+})
+
+femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
+
+function populateDOM(characters) {
+    removeChildren(mainContent)
+    characters.forEach(element => {
         const charFigure = document.createElement('figure')
         const charImg = document.createElement('img')
-        charImg.src = `https://starwars-visualguide.com/assets/img/characters/10.jpg`
+        let charNum = getLastNumber(element.url)
+        charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
+        charImg.addEventListener('error', () => charImg.hidden = true) // genius level
         const charCaption = document.createElement('figcaption')
-        charCaption.textContent = `Luke Skywalker`
+        charCaption.textContent = element.name
     
         charFigure.appendChild(charImg)
         charFigure.appendChild(charCaption)
     
         mainContent.appendChild(charFigure)
     })
-})
-
-let theURL = "https://swapi.co/api/people/1/"
-
-function getLastNumber(url) {
-    console.log(url)
 }
 
-//https://starwars-visualguide.com/assets/img/characters/1.jpg
-//"url": "https://swapi.co/api/people/1/"
+// let theURL = "https://swapi.co/api/people/2/"
+// let theURL2 = "https://swapi.co/api/people/14/"
+
+function getLastNumber(url) {
+    let end = url.lastIndexOf('/')
+    let start = end - 2
+    if (url.charAt(start) === '/') {
+        start++
+    }
+    return url.slice(start, end)
+}
+
+function removeChildren(container) {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+}
