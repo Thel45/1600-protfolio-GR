@@ -9,10 +9,11 @@
     margin: 1rem;
 }
 
-#mian {
+#main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: blue;
 }
 
 figure img {
