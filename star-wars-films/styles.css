@@ -11,9 +11,10 @@ main {
  
 figure {
     margin: 1rem;
+    color: rgb(243, 125, 16);
 }
  
 figcaption {
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(0, 17, 255);
 }
