@@ -4,7 +4,7 @@ import { films } from '../data/films.js'
 //console.log(people.length)
  
 const main = document.querySelector('main')
-
+// Ask teacher and figure out how to fix the order of the titles
 for (let i = 0; i < 7; i++) {
     let figure = document.createElement('figure')
     let figImg = document.createElement('img')
