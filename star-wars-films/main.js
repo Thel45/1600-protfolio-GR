@@ -1,20 +1,20 @@
 import { films } from '../data/films.js'
+import { getLastNumber } from '../utils/index.js'
 
- 
-//console.log(people.length)
- 
 const main = document.querySelector('main')
-// Ask teacher and figure out how to fix the order of the titles
+
 for (let i = 0; i < 7; i++) {
     let figure = document.createElement('figure')
     let figImg = document.createElement('img')
     figImg.src = `https://starwars-visualguide.com/assets/img/films/${i + 1}.jpg`
     let figCaption = document.createElement('figcaption')
-    figCaption.textContent = films[i].title
+
+    const foundFilm = films.find(film => getLastNumber(film.url) === (i + 1).toString())
+ 
+    figCaption.textContent = foundFilm.title
 
     figure.appendChild(figImg)
     figure.appendChild(figCaption)
 
     main.appendChild(figure)
 }
-  
