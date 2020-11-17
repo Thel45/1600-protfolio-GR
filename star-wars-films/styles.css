@@ -2,20 +2,18 @@
     margin: 0px;
     box-sizing: border-box;
 }
- 
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(248, 15, 15);
 }
- 
+
 figure {
     margin: 1rem;
-    color: rgb(243, 125, 16);
 }
- 
+
 figcaption {
     text-align: center;
-    background-color: rgb(0, 17, 255);
+    background-color: aqua;
 }
